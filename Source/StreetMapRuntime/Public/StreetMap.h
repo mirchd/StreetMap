@@ -322,7 +322,7 @@ public:
 	UStreetMap();
 
 	// UObject overrides
-	virtual void GetAssetRegistryTags( TArray<FAssetRegistryTag>& OutTags ) const override;
+	virtual void GetAssetRegistryTags(FAssetRegistryTagsContext Context) const override;
 	
 	/** Gets the roads in this street map (read only) */
 	const TArray<FStreetMapRoad>& GetRoads() const
